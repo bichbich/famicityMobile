@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1024.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.pidev.controllers.AfficherUsersController">
+   <children>
+      <AnchorPane layoutX="277.0" layoutY="-15.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="606.0" prefWidth="952.0">
+         <children>
+            <Pane layoutX="92.0" layoutY="21.0" prefHeight="514.0" prefWidth="214.0" style="-fx-background-color: #2196F3;">
+               <children>
+                  <TextField fx:id="nom" layoutX="77.0" layoutY="160.0" onKeyTyped="#rechercheUtilisateur" prefHeight="25.0" prefWidth="112.0">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </TextField>
+                  <TextField fx:id="prenom" layoutX="77.0" layoutY="207.0" onKeyTyped="#rechercheUtilisateur" prefHeight="25.0" prefWidth="112.0">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </TextField>
+                  <TextField fx:id="email" layoutX="76.0" layoutY="254.0" onKeyTyped="#rechercheUtilisateur" prefHeight="25.0" prefWidth="112.0">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </TextField>
+                  <Label layoutX="13.0" layoutY="164.0" prefHeight="17.0" prefWidth="47.0" text="Nom" textFill="WHITE">
+                     <font>
+                        <Font name="Book Antiqua Italic" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="13.0" layoutY="211.0" prefHeight="17.0" prefWidth="47.0" text="Prenom" textFill="WHITE">
+                     <font>
+                        <Font name="Book Antiqua Italic" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="17.0" layoutY="257.0" prefHeight="17.0" prefWidth="47.0" text="Email" textFill="WHITE">
+                     <font>
+                        <Font name="Book Antiqua Italic" size="13.0" />
+                     </font>
+                  </Label>
+                  <JFXButton buttonType="RAISED" layoutX="103.0" layoutY="387.0" onAction="#ajouterreponsable" prefHeight="32.0" prefWidth="104.0" ripplerFill="#e45bc4" style="-fx-background-color: #7b7a82;" text="Ajouter Admin" textFill="WHITE">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="15.0" layoutY="454.0" onAction="#sortirResponsable" prefHeight="32.0" prefWidth="173.0" ripplerFill="#e45bc4" style="-fx-background-color: #7b7a82;" text="Sortir" textFill="WHITE">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </JFXButton>
+                  <TextField fx:id="password" layoutX="77.0" layoutY="108.0" onKeyTyped="#rechercheUtilisateur" prefHeight="25.0" prefWidth="112.0">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </TextField>
+                  <TextField fx:id="username" layoutX="77.0" layoutY="54.0" onKeyTyped="#rechercheUtilisateur" prefHeight="25.0" prefWidth="112.0">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </TextField>
+                  <Label layoutX="2.0" layoutY="111.0" prefHeight="19.0" prefWidth="69.0" text="mot de passe" textFill="WHITE">
+                     <font>
+                        <Font name="Book Antiqua Italic" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="5.0" layoutY="57.0" prefHeight="19.0" prefWidth="69.0" text="nom utilisateur" textFill="WHITE">
+                     <font>
+                        <Font name="Book Antiqua Italic" size="13.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="delete" buttonType="RAISED" layoutX="6.0" layoutY="388.0" onAction="#supprimer" prefHeight="32.0" prefWidth="78.0" ripplerFill="#e45bc4" style="-fx-background-color: #7b7a82;" text="supprimer" textFill="WHITE">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </JFXButton>
+                  <ComboBox fx:id="comboroles" layoutX="67.0" layoutY="305.0" prefHeight="25.0" prefWidth="131.0" promptText="Admin" />
+                  <Label layoutX="13.0" layoutY="305.0" prefHeight="17.0" prefWidth="47.0" text="roles" textFill="WHITE">
+                     <font>
+                        <Font name="Book Antiqua Italic" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="5.0" text="Recherche" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="recherche" layoutX="69.0" layoutY="18.0" onKeyTyped="#rechercheUtilisateur" prefHeight="25.0" prefWidth="125.0" promptText="Recherche">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </TextField>
+               </children>
+            </Pane>
+            <TableView fx:id="tableV" layoutX="300.0" layoutY="21.0" prefHeight="514.0" prefWidth="646.0">
+               <columns>
+                  <TableColumn fx:id="tabUsername" prefWidth="195.0" text="username" />
+                  <TableColumn fx:id="tabNom" prefWidth="223.0" text="nom" />
+                  <TableColumn fx:id="tabroles" prefWidth="227.0" text="roles" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <JFXHamburger fx:id="menuADMin" layoutX="4.0" layoutY="2.0" />
+      <JFXDrawer fx:id="drawwer" layoutX="4.0" layoutY="32.0" prefHeight="538.0" prefWidth="69.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.pidev.controllers.ModifierPlanController">
+   <children>
+      <JFXHamburger fx:id="hamburger" layoutX="25.0" layoutY="14.0" />
+      <JFXDrawer fx:id="drawer" layoutX="16.0" layoutY="48.0" prefHeight="528.0" prefWidth="79.0" />
+      <ImageView fitHeight="566.0" fitWidth="474.0" layoutX="539.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/creeevent1.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="251.0" layoutY="12.0" text="Modifier un évenement">
+         <font>
+            <Font name="Aldhabi" size="41.0" />
+         </font>
+      </Label>
+      <Label layoutX="247.0" layoutY="73.0" text="Nom évènement*">
+         <font>
+            <Font name="Aldhabi" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="247.0" layoutY="149.0" text="Date évènement*">
+         <font>
+            <Font name="Aldhabi" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="250.0" layoutY="248.0" text="Nom service*">
+         <font>
+            <Font name="Aldhabi" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="247.0" layoutY="344.0" text="Nom famille*">
+         <font>
+            <Font name="Aldhabi" size="30.0" />
+         </font>
+      </Label>
+      <JFXDatePicker fx:id="datemodif" defaultColor="#25805e" layoutX="247.0" layoutY="201.0" prefHeight="28.0" prefWidth="252.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Glow level="0.49" />
+         </effect>
+      </JFXDatePicker>
+      <JFXComboBox fx:id="servmodif" layoutX="247.0" layoutY="300.0" prefHeight="25.0" prefWidth="252.0" />
+      <JFXComboBox fx:id="famillemodif" layoutX="247.0" layoutY="396.0" prefHeight="25.0" prefWidth="252.0" />
+      <JFXTextField fx:id="nommodif" layoutX="249.0" layoutY="113.0" prefHeight="25.0" prefWidth="252.0" />
+      <JFXButton fx:id="buttonmodif" buttonType="RAISED" layoutX="313.0" layoutY="507.0" onAction="#modifAction" ripplerFill="#28b581" style="-fx-background-color: #28b581;" text="Modifier" textFill="#fffafa">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="546.0" layoutY="12.0" text="FAMICTY..EVENEMENT">
+         <font>
+            <Font name="Aldhabi" size="41.0" />
+         </font>
+      </Label>
+      <Separator layoutX="547.0" layoutY="60.0" prefHeight="0.0" prefWidth="278.0" />
+      <Separator layoutX="531.0" layoutY="70.0" orientation="VERTICAL" prefHeight="510.0" prefWidth="1.0" />
+      <Separator layoutX="251.0" layoutY="62.0" prefHeight="3.0" prefWidth="252.0" />
+      <Separator layoutX="250.0" layoutY="66.0" prefHeight="3.0" prefWidth="252.0" />
+   </children>
+</AnchorPane>

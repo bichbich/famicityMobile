@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.pidev.controllers.QuizzController">
+   <children>
+      <JFXHamburger fx:id="hamberger" layoutX="16.0" layoutY="15.0" />
+      <JFXDrawer fx:id="drawer" layoutY="53.0" prefHeight="561.0" prefWidth="170.0" />
+      <ImageView fitHeight="279.0" fitWidth="423.0" layoutX="604.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/imageService/restau.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="243.0" fitWidth="419.0" layoutX="604.0" layoutY="357.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/imageService/image4.jpg" />
+         </image></ImageView>
+      <ImageView fitHeight="240.0" fitWidth="419.0" layoutX="185.0" layoutY="359.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/imageService/image2.jpg" />
+         </image></ImageView>
+      <ImageView fitHeight="262.0" fitWidth="419.0" layoutX="186.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/imageService/téléchargementAAAA.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="605.0" layoutY="334.0" onAction="#makeQuizz2" prefHeight="25.0" prefWidth="417.0" style="-fx-background-color: #4099FF;" text="Quizz 2" />
+      <JFXButton layoutX="605.0" layoutY="588.0" onAction="#makeQuizz4" prefHeight="25.0" prefWidth="417.0" style="-fx-background-color: #4099FF;" text="Quizz 4" />
+      <JFXButton layoutX="186.0" layoutY="334.0" onAction="#makeQuizz1" prefHeight="25.0" prefWidth="417.0" style="-fx-background-color: #4099FF;" text="Quizz 1" />
+      <JFXButton layoutX="186.0" layoutY="588.0" onAction="#makeQuizz3" prefHeight="25.0" prefWidth="417.0" style="-fx-background-color: #4099FF;" text="Quizz 3" />
+   </children>
+</AnchorPane>

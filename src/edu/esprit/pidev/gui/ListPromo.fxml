@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.pidev.controllers.ListPromoController">
+   <children>
+      <TableView fx:id="table" layoutX="523.0" prefHeight="600.0" prefWidth="501.0">
+         <columns>
+            <TableColumn fx:id="des" prefWidth="219.0" text="Description" />
+            <TableColumn fx:id="p" minWidth="0.0" prefWidth="91.0" text="Prix" />
+            <TableColumn fx:id="e" prefWidth="123.0" text="Etat" />
+            <TableColumn fx:id="t" prefWidth="67.0" text="Taux" />
+         </columns>
+      </TableView>
+      <JFXTextField fx:id="idP" layoutX="463.0" layoutY="415.0" visible="false" />
+      <Pane layoutX="169.0" prefHeight="602.0" prefWidth="356.0" style="-fx-background-color: #4099FF;">
+         <children>
+            <JFXButton fx:id="AddPromo" buttonType="RAISED" layoutX="116.0" layoutY="239.0" onAction="#makeAddPromo" prefHeight="32.0" prefWidth="126.0" ripplerFill="#e45bc4" style="-fx-background-color: #7b7a82;" text="Ajouter" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </JFXButton>
+            <TextField fx:id="t1" layoutX="68.0" layoutY="94.0" prefHeight="25.0" prefWidth="208.0" promptText="Taux">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <TextField fx:id="desc" layoutX="67.0" layoutY="39.0" prefHeight="25.0" prefWidth="208.0" promptText="Description">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <JFXButton fx:id="Modifier" buttonType="RAISED" layoutX="118.0" layoutY="291.0" onAction="#makeModifier" prefHeight="32.0" prefWidth="126.0" ripplerFill="#e45bc4" style="-fx-background-color: #7b7a82;" text="Modifier" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </JFXButton>
+            <ComboBox fx:id="cb" layoutX="68.0" layoutY="153.0" prefHeight="25.0" prefWidth="208.0" promptText="Service" />
+            <JFXButton fx:id="Supprimer" buttonType="RAISED" layoutX="120.0" layoutY="400.0" onAction="#makeSupprimer" prefHeight="32.0" prefWidth="126.0" ripplerFill="#e45bc4" style="-fx-background-color: #7b7a82;" text="Supprimer" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </JFXButton>
+            <JFXButton fx:id="Recuperer" buttonType="RAISED" layoutX="118.0" layoutY="348.0" onAction="#makeRecuperer" prefHeight="32.0" prefWidth="126.0" ripplerFill="#e45bc4" style="-fx-background-color: #7b7a82;" text="Recuperer" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </JFXButton>
+            <JFXButton fx:id="Desactiver" buttonType="RAISED" layoutX="122.0" layoutY="505.0" onAction="#makeDesactiver" prefHeight="32.0" prefWidth="126.0" ripplerFill="#e45bc4" style="-fx-background-color: #7b7a82;" text="Desactiver" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </JFXButton>
+            <JFXButton fx:id="Activer" buttonType="RAISED" layoutX="120.0" layoutY="453.0" onAction="#makeActiver" prefHeight="32.0" prefWidth="126.0" ripplerFill="#e45bc4" style="-fx-background-color: #7b7a82;" text="Activer" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </JFXButton>
+         </children>
+      </Pane>
+      <JFXDrawer fx:id="drawer" prefHeight="600.0" prefWidth="170.0" />
+      <JFXHamburger fx:id="hamberger" layoutX="14.0" layoutY="14.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1024.0" style="-fx-background-color: c;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.pidev.controllers.ChangerEtatController">
+   <children>
+      <TableView fx:id="tableV" layoutX="192.0" layoutY="157.0" prefHeight="200.0" prefWidth="601.0">
+         <columns>
+            <TableColumn fx:id="tabNom" prefWidth="75.0" text="Nom" />
+            <TableColumn fx:id="tabSujet" prefWidth="75.0" text="Sujet" />
+            <TableColumn fx:id="tabEtat" prefWidth="75.0" text="Etat" />
+            <TableColumn fx:id="tabNature" prefWidth="75.0" text="Nature" />
+            <TableColumn fx:id="tabLevel" prefWidth="75.0" text="Level" />
+            <TableColumn fx:id="tabEmail" prefWidth="75.0" text="Email" />
+            <TableColumn fx:id="tabDate" prefWidth="75.0" text="Date" />
+            <TableColumn fx:id="tabDescription" prefWidth="75.0" text="Description" />
+         </columns>
+      </TableView>
+      <Label layoutX="390.0" layoutY="14.0" text="Changer etat" textFill="#da0909">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="94.0" layoutY="392.0" text="Etat">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtEtat" layoutX="138.0" layoutY="387.0" />
+      <JFXButton fx:id="get" layoutX="302.0" layoutY="390.0" onAction="#recuperer" style="-fx-background-color: #2196F3;" text="Récupérer" />
+      <JFXButton fx:id="edit" layoutX="859.0" layoutY="533.0" onAction="#modifierTout" prefHeight="25.0" prefWidth="87.0" style="-fx-background-color: #2196F3;" text="Changer" textFill="#f9f9f9" />
+      <Label layoutX="94.0" layoutY="99.0" text="Recherche:" />
+      <JFXTextField fx:id="txtRecherche" layoutX="184.0" layoutY="79.0" maxWidth="206.0" minWidth="206.0" prefHeight="31.0" prefWidth="206.0" />
+      <JFXButton fx:id="btnRecherche" layoutX="441.0" layoutY="82.0" onAction="#rechercherTout" prefHeight="25.0" prefWidth="103.0" style="-fx-background-color: #2196F3;" text="Rechercher" />
+      <JFXTextField fx:id="txtNom" layoutX="275.0" layoutY="480.0" />
+      <JFXTextField fx:id="txtNature" layoutX="287.0" layoutY="448.0" />
+      <JFXTextField fx:id="txtEmail" layoutX="83.0" layoutY="465.0" />
+      <JFXTextField fx:id="txtSujet" layoutX="350.0" layoutY="418.0" />
+      <JFXTextField fx:id="txtLevel" layoutX="482.0" layoutY="402.0" />
+      <JFXTextField fx:id="txtDate" layoutX="482.0" layoutY="433.0" />
+      <JFXTextArea fx:id="txtDescription" layoutX="492.0" layoutY="463.0" maxWidth="346.0" minWidth="178.0" prefHeight="32.0" prefWidth="178.0" />
+      <JFXTextField fx:id="txtId" layoutX="83.0" layoutY="505.0" />
+      <JFXHamburger fx:id="menuADmin" layoutX="24.0" layoutY="20.0" />
+      <ImageView fitHeight="68.0" fitWidth="87.0" layoutX="271.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/17495411_1374667325954895_523311120_n.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="68.0" fitWidth="70.0" layoutX="902.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/depositphotos_23627955-stock-photo-exit-black-and-blue-square.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="retour" layoutX="739.0" layoutY="533.0" onAction="#retourBtn" prefHeight="25.0" prefWidth="87.0" style="-fx-background-color: #2196F3;" text="Retour" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.pidev.controllers.ListQuizzController">
+   <children>
+      <TableView fx:id="table" layoutX="420.0" prefHeight="600.0" prefWidth="606.0">
+        <columns>
+          <TableColumn fx:id="Ques" prefWidth="277.0" text="Question" />
+            <TableColumn fx:id="rep1" text="Reponse 1" />
+            <TableColumn fx:id="rep2" prefWidth="86.0" text="Reponse 2" />
+            <TableColumn fx:id="rep3" prefWidth="82.0" text="Reponse 3" />
+            <TableColumn fx:id="repCorrecte" text="R. C" />
+        </columns>
+      </TableView>
+      <Pane layoutX="142.0" prefHeight="600.0" prefWidth="278.0" style="-fx-background-color: #4099FF;">
+         <children>
+            <JFXButton fx:id="add" buttonType="RAISED" layoutX="74.0" layoutY="366.0" onAction="#makeadd" prefHeight="32.0" prefWidth="126.0" ripplerFill="#e45bc4" style="-fx-background-color: #7b7a82;" text="Ajouter" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </JFXButton>
+            <TextField fx:id="rep11" layoutX="36.0" layoutY="161.0" prefHeight="25.0" prefWidth="206.0" promptText="1er Reponse">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <TextField fx:id="ques" layoutX="36.0" layoutY="71.0" prefHeight="25.0" prefWidth="206.0" promptText="Question">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <TextField fx:id="rep" layoutX="36.0" layoutY="305.0" prefHeight="25.0" prefWidth="206.0" promptText="Reponse Correcte">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <TextField fx:id="numquizz" layoutX="36.0" layoutY="118.0" prefHeight="25.0" prefWidth="206.0" promptText="N° Quizz">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <TextField fx:id="rep31" layoutX="37.0" layoutY="256.0" prefHeight="25.0" prefWidth="206.0" promptText="3eme  Reponse">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <TextField fx:id="rep21" layoutX="36.0" layoutY="208.0" prefHeight="25.0" prefWidth="206.0" promptText="2eme Reponse">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+         </children>
+      </Pane>
+      <JFXDrawer fx:id="drawer" prefHeight="600.0" prefWidth="155.0" />
+      <JFXHamburger fx:id="hamberger" layoutX="9.0" layoutY="9.0" />
+      <JFXButton fx:id="Recuperer" buttonType="RAISED" layoutX="217.0" layoutY="485.0" onAction="#makeRecuperer" prefHeight="32.0" prefWidth="126.0" ripplerFill="#e45bc4" style="-fx-background-color: #7b7a82;" text="Recuperer" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <JFXButton fx:id="Supprimer" buttonType="RAISED" layoutX="219.0" layoutY="537.0" onAction="#makeSupprimer" prefHeight="32.0" prefWidth="126.0" ripplerFill="#e45bc4" style="-fx-background-color: #7b7a82;" text="Supprimer" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <JFXButton fx:id="Modifier" buttonType="RAISED" layoutX="217.0" layoutY="428.0" onAction="#makeModifier" prefHeight="32.0" prefWidth="126.0" ripplerFill="#e45bc4" style="-fx-background-color: #7b7a82;" text="Modifier" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <JFXTextField fx:id="idP" layoutX="473.0" layoutY="425.0" visible="false" />
+   </children>
+</AnchorPane>

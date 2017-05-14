@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.pidev.controllers.AccueilFrontOfficeController">
+   <children>
+      <JFXHamburger fx:id="hamburger" layoutX="24.0" layoutY="14.0" />
+      <JFXDrawer fx:id="drawer" layoutY="51.0" prefHeight="551.0" prefWidth="175.0" />
+      <ImageView fitHeight="501.0" fitWidth="344.0" layoutX="662.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/sortie3.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="191.0" fitWidth="152.0" layoutX="495.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/sortie11.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="212.0" fitWidth="152.0" layoutX="336.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/sortie4.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="190.0" fitWidth="152.0" layoutX="177.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/sortie12.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="368.0" layoutY="50.0" prefHeight="36.0" prefWidth="210.0" text="Famicity" textFill="#1776cf">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Separator layoutX="655.0" layoutY="68.0" orientation="VERTICAL" prefHeight="516.0" prefWidth="7.0" />
+      <Separator layoutX="489.0" layoutY="103.0" orientation="VERTICAL" prefHeight="190.0" prefWidth="7.0" />
+      <Separator layoutX="331.0" layoutY="103.0" orientation="VERTICAL" prefHeight="190.0" prefWidth="6.0" />
+      <ImageView fitHeight="190.0" fitWidth="228.0" layoutX="419.0" layoutY="370.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/bp2.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="152.0" fitWidth="236.0" layoutX="175.0" layoutY="370.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/bp03.jpg" />
+         </image>
+      </ImageView>
+      <Separator layoutX="409.0" layoutY="369.0" orientation="VERTICAL" prefHeight="152.0" prefWidth="6.0" />
+      <Separator layoutX="178.0" layoutY="304.0" prefHeight="3.0" prefWidth="467.0" />
+      <Separator layoutX="176.0" layoutY="352.0" prefHeight="3.0" prefWidth="467.0" />
+      <Label layoutX="317.0" layoutY="309.0" prefHeight="36.0" prefWidth="210.0" text="Sortir en famille" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Separator layoutX="178.0" layoutY="91.0" prefHeight="3.0" prefWidth="467.0" />
+      <Separator layoutX="177.0" layoutY="51.0" prefHeight="3.0" prefWidth="467.0" />
+      <Label layoutX="307.0" layoutY="545.0" prefHeight="36.0" prefWidth="210.0" text="Spécial weekend">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Separator layoutX="175.0" layoutY="583.0" prefHeight="3.0" prefWidth="473.0" />
+      <Separator layoutX="174.0" layoutY="543.0" prefHeight="3.0" prefWidth="473.0" />
+      <ImageView fx:id="PhotoUser" fitHeight="77.0" fitWidth="134.0" layoutX="815.0" layoutY="5.0" onMouseClicked="#profil1Action" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="labelnom" layoutX="895.0" layoutY="15.0" prefHeight="57.0" prefWidth="92.0" />
+      <ImageView fitHeight="36.0" fitWidth="42.0" layoutX="931.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/imageService/coin.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="coin" layoutX="970.0" layoutY="11.0" prefHeight="36.0" prefWidth="38.0" text="Label" />
+      <JFXButton fx:id="contact" layoutX="910.0" layoutY="60.0" onAction="#btnOk" style="-fx-background-color: #4099ff;" text="Contactez-nous" />
+   </children>
+</AnchorPane>

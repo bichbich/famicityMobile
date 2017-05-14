@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="AnchorPane" prefHeight="600.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.pidev.controllers.PlaningController">
+   <children>
+      <JFXHamburger fx:id="hamburger" />
+      <JFXDrawer fx:id="drawer" layoutX="7.0" layoutY="35.0" prefHeight="550.0" prefWidth="79.0" />
+      <AnchorPane fx:id="NS" layoutX="226.0" layoutY="12.0" minHeight="0.0" minWidth="0.0" prefHeight="586.0" prefWidth="795.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <JFXDatePicker fx:id="DateEv" defaultColor="#3a1890" layoutX="20.0" layoutY="215.0" prefHeight="28.0" prefWidth="240.0" showWeekNumbers="true">
+               <effect>
+                  <Glow level="0.49" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXDatePicker>
+            <JFXButton fx:id="ajout" buttonType="RAISED" layoutX="98.0" layoutY="491.0" onAction="#AjouterAction" prefHeight="52.0" prefWidth="119.0" ripplerFill="#102872" style="-fx-background-color: #4267b2;" text="Ajouter" textAlignment="CENTER" textFill="#fff8f8">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="17.0" layoutY="5.0" prefHeight="72.0" prefWidth="228.0" text="Créer un évenement">
+               <font>
+                  <Font name="Aldhabi" size="41.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="nomEve" focusColor="#304a9a" layoutX="20.0" layoutY="120.0" prefHeight="25.0" prefWidth="240.0" unFocusColor="#4d4d4d" />
+            <Label layoutX="20.0" layoutY="163.0" text="Date évènement*">
+               <font>
+                  <Font name="Aldhabi" size="30.0" />
+               </font>
+            </Label>
+            <Separator layoutX="19.0" layoutY="53.0" prefHeight="3.0" prefWidth="217.0" />
+            <Label layoutX="19.0" layoutY="77.0" text="Nom évènement*">
+               <font>
+                  <Font name="Aldhabi" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="21.0" layoutY="257.0" text="Nom service*">
+               <font>
+                  <Font name="Aldhabi" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="21.0" layoutY="354.0" text="Nom famille*">
+               <font>
+                  <Font name="Aldhabi" size="30.0" />
+               </font>
+            </Label>
+            <Separator layoutX="279.0" layoutY="64.0" orientation="VERTICAL" prefHeight="510.0" prefWidth="13.0" />
+            <JFXComboBox fx:id="nomService" layoutX="20.0" layoutY="316.0" prefHeight="25.0" prefWidth="240.0" />
+            <JFXComboBox fx:id="nomFamille" layoutX="20.0" layoutY="406.0" prefHeight="25.0" prefWidth="240.0" />
+            <Separator layoutX="19.0" layoutY="57.0" prefHeight="3.0" prefWidth="217.0" />
+            <ImageView fitHeight="566.0" fitWidth="456.0" layoutX="313.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/creeevent1.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="300.0" layoutY="5.0" prefHeight="72.0" prefWidth="289.0" text="FAMICTY..EVENEMENT">
+               <font>
+                  <Font name="Aldhabi" size="41.0" />
+               </font>
+            </Label>
+            <Separator layoutX="300.0" layoutY="51.0" prefHeight="3.0" prefWidth="276.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

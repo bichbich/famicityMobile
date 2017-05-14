@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" fx:id="l2" prefHeight="600.0" prefWidth="1024.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="edu.esprit.pidev.controllers.ResultatController">
+   <children>
+      <Label fx:id="coin" layoutX="971.0" layoutY="8.0" prefHeight="36.0" prefWidth="38.0" text="Label" />
+      <ImageView fitHeight="36.0" fitWidth="42.0" layoutX="932.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/imageService/coin.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="nom" layoutX="773.0" layoutY="8.0" prefHeight="36.0" prefWidth="89.0" text="Label" />
+      <ImageView fx:id="profil" fitHeight="51.0" fitWidth="57.0" layoutX="874.0" onMouseClicked="#profil1Action" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icone_compte.png" />
+         </image>
+      </ImageView>
+      <JFXDrawer fx:id="drawer" layoutX="1.0" layoutY="48.0" prefHeight="551.0" prefWidth="175.0" />
+      <JFXHamburger fx:id="hamburger" layoutX="15.0" layoutY="13.0" />
+      <ImageView fitHeight="99.0" fitWidth="103.0" layoutX="305.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/imageService/tick.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="99.0" fitWidth="103.0" layoutX="305.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/imageService/crois.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="474.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reponses correctes">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="475.0" layoutY="367.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reponses fausses">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Label fx:id="l1" layoutX="422.0" layoutY="210.0" text="Label">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="l3" layoutX="422.0" layoutY="345.0" text="Labe2">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

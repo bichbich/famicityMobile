@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="AnchorPane" prefHeight="600.0" prefWidth="1024.0" style="-fx-background-color: #4f8f9f;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.pidev.controllers.ProfileController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="34.0" layoutY="27.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="547.0" prefWidth="956.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <ImageView fx:id="logoFamicity" fitHeight="47.0" fitWidth="69.0" layoutX="23.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/17495411_1374667325954895_523311120_n.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Sedéconnecter" fitHeight="63.0" fitWidth="80.0" layoutX="849.0" layoutY="9.0" onMouseClicked="#Sedéconnecter" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/depositphotos_23627955-stock-photo-exit-black-and-blue-square.jpg" />
+               </image>
+            </ImageView>
+            <SplitPane layoutX="290.0" layoutY="143.0" prefHeight="357.0" prefWidth="574.0">
+               <items>
+                  <AnchorPane fx:id="gauche" minHeight="0.0" minWidth="0.0" prefHeight="333.0" prefWidth="520.0" style="-fx-background-color: #C8DCF3;">
+                     <children>
+                        <AnchorPane layoutX="195.0" layoutY="-2.0" minHeight="0.0" minWidth="0.0" prefHeight="370.0" prefWidth="337.0" style="-fx-background-color: #E6EAF2;">
+                           <children>
+                              <Label fx:id="labelnom" layoutX="120.0" layoutY="76.0" prefHeight="33.0" prefWidth="99.0">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font></Label>
+                              <Label fx:id="labelEmail" layoutX="91.0" layoutY="162.0" prefHeight="25.0" prefWidth="169.0">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font></Label>
+                              <Label layoutX="78.0" layoutY="33.0" prefHeight="21.0" prefWidth="182.0" text="Nom d'utilisateur" textFill="#302db9">
+                                 <font>
+                                    <Font name="System Bold Italic" size="21.0" />
+                                 </font></Label>
+                              <Label layoutX="126.0" layoutY="109.0" text="Email" textFill="#302db9">
+                                 <font>
+                                    <Font name="System Bold Italic" size="21.0" />
+                                 </font></Label>
+                              <JFXButton fx:id="BtnModifC" buttonType="RAISED" layoutX="80.0" layoutY="287.0" onAction="#Modifier" prefHeight="25.0" prefWidth="163.0" style="-fx-background-color: #2196F3;" text="Modifier mes coordonées" />
+                              <JFXButton fx:id="affiche" buttonType="RAISED" layoutX="80.0" layoutY="323.0" onAction="#listerreservation" prefHeight="25.0" prefWidth="163.0" ripplerFill="WHITE" style="-fx-background-color: #2196F3;" text="Afficher mes reservations" />
+                           </children>
+                        </AnchorPane>
+                        <ImageView fx:id="PhotoUser" fitHeight="275.0" fitWidth="139.0" layoutX="36.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </AnchorPane>
+               </items>
+            </SplitPane>
+            <ImageView fx:id="home" fitHeight="72.0" fitWidth="125.0" layoutX="444.0" layoutY="7.0" onMouseClicked="#RedirigerVersHome" pickOnBounds="true" preserveRatio="true">
+
+               <image>
+                  <Image url="@../images/maison-icone-large.png" />
+               </image>
+            </ImageView>
+            <JFXListView fx:id="List" layoutY="145.0" prefHeight="355.0" prefWidth="277.0" />
+            <JFXButton fx:id="approuver" layoutX="181.0" layoutY="500.0" />
+            <JFXButton fx:id="ignorer" layoutX="34.0" layoutY="500.0" text="Button" />
+            <Label layoutX="76.0" layoutY="59.0" text="Notifications">
+               <effect>
+                  <ColorAdjust>
+                     <input>
+                        <Bloom />
+                     </input>
+                  </ColorAdjust>
+               </effect>
+               <font>
+                  <Font size="28.0" />
+               </font>
+               <textFill>
+                  <LinearGradient cycleMethod="REPEAT" endX="0.5761904761904761" endY="0.4571428571428572" startX="0.5809523809523809" startY="0.4571428571428572">
+                     <stops>
+                        <Stop color="#040707" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

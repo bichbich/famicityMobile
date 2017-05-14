@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="891.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.pidev.controllers.RegisterController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="393.0" prefWidth="414.0">
+         <children>
+            <ImageView fitHeight="593.0" fitWidth="992.0" layoutX="-16.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-137.0" AnchorPane.leftAnchor="-16.0" AnchorPane.rightAnchor="-562.0" AnchorPane.topAnchor="-4.0">
+               <image>
+                  <Image url="@../images/slide04.jpg" />
+               </image>
+            </ImageView>
+            <Pane layoutX="11.0" layoutY="28.0" opacity="0.89" prefHeight="354.0" prefWidth="389.0" style="-fx-background-color: white;">
+               <effect>
+                  <DropShadow color="#1e1d1d" />
+               </effect>
+               <children>
+                  <JFXTextField fx:id="Jpassword" accessibleRole="PASSWORD_FIELD" alignment="TOP_LEFT" focusColor="#a7a7a7" layoutX="122.0" layoutY="165.0" prefHeight="28.0" prefWidth="252.0" promptText="Mot de passe" style="-fx-background-color: white;" unFocusColor="#2f2d2d">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </JFXTextField>
+                  <JFXTextField fx:id="jEmail" alignment="TOP_LEFT" focusColor="#a7a7a7" layoutX="123.0" layoutY="113.0" prefHeight="28.0" prefWidth="249.0" promptText="Email" style="-fx-background-color: white;" unFocusColor="#2f2d2d">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </JFXTextField>
+                  <JFXTextField fx:id="jPrenom" alignment="TOP_LEFT" focusColor="#a7a7a7" layoutX="122.0" layoutY="63.0" prefHeight="28.0" prefWidth="249.0" promptText="Prenom" style="-fx-background-color: white;" unFocusColor="#2f2d2d">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </JFXTextField>
+                  <JFXTextField fx:id="jNom" alignment="TOP_LEFT" focusColor="#a7a7a7" layoutX="122.0" layoutY="14.0" prefHeight="28.0" prefWidth="249.0" promptText="Nom utilisateur" style="-fx-background-color: white;" unFocusColor="#2f2d2d">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </JFXTextField>
+                  <Text fontSmoothingType="LCD" layoutX="17.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fontSmoothingType="LCD" layoutX="20.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prénom">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fontSmoothingType="LCD" layoutX="20.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fontSmoothingType="LCD" layoutX="17.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mot de passe">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="validUsername" layoutX="122.0" layoutY="42.0" prefHeight="17.0" prefWidth="255.0" />
+                  <Label fx:id="validPassword" layoutX="120.0" layoutY="65.0" prefHeight="17.0" prefWidth="255.0" />
+                  <Label fx:id="validNom" layoutX="104.0" layoutY="142.0" prefHeight="17.0" prefWidth="255.0" />
+                  <Label fx:id="validPrenom" layoutX="104.0" layoutY="206.0" prefHeight="17.0" prefWidth="255.0" />
+                  <Label fx:id="validCin" layoutX="266.0" layoutY="266.0" prefHeight="17.0" prefWidth="104.0" />
+                  <Label fx:id="validAdress" layoutX="116.0" layoutY="566.0" prefHeight="17.0" prefWidth="255.0" />
+                  <Label fx:id="validSexe" layoutX="108.0" layoutY="265.0" prefHeight="17.0" prefWidth="85.0" />
+                  <JFXButton buttonType="RAISED" layoutX="303.0" layoutY="252.0" onAction="#uploadphoto" prefHeight="28.0" prefWidth="71.0" ripplerFill="#40b9dd" style="-fx-background-color: #7b7a82;" text="Import Image" textFill="WHITE">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </JFXButton>
+                  <JFXTextField fx:id="imagepath" alignment="TOP_LEFT" focusColor="#a7a7a7" layoutX="123.0" layoutY="251.0" prefHeight="28.0" prefWidth="163.0" promptText="Image" style="-fx-background-color: white;" unFocusColor="#2f2d2d">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </JFXTextField>
+                  <Text fontSmoothingType="LCD" layoutX="25.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Image">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <JFXTextField fx:id="jPasswordconfirm" accessibleRole="PASSWORD_FIELD" alignment="TOP_LEFT" focusColor="#a7a7a7" layoutX="124.0" layoutY="209.0" prefHeight="28.0" prefWidth="252.0" promptText="Mot de passe" style="-fx-background-color: white;" unFocusColor="#2f2d2d">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </JFXTextField>
+                  <Text fontSmoothingType="LCD" layoutX="17.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirmer ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <ComboBox fx:id="Combobox" layoutX="118.0" layoutY="303.0" prefWidth="150.0" />
+                  <Text layoutX="23.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Position" wrappingWidth="48.21386396884918" />
+                  <JFXTextField fx:id="jrole" layoutX="285.0" layoutY="303.0" prefHeight="25.0" prefWidth="87.0" visible="false" />
+               </children>
+            </Pane>
+            <JFXButton fx:id="inscription" buttonType="RAISED" layoutX="172.0" layoutY="415.0" onAction="#inscription" prefHeight="37.0" prefWidth="87.0" ripplerFill="#40b9dd" style="-fx-background-color: #7b7a82;" text="Inscription" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </JFXButton>
+            <Label fx:id="iv" layoutX="139.0" layoutY="462.0" prefHeight="37.0" prefWidth="182.0">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>

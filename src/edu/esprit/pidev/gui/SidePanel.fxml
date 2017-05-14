@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="487.0" prefWidth="191.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.pidev.controllers.SidePanelController1">
+   <children>
+      <VBox fillWidth="false" layoutX="-11.0" layoutY="64.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="RIGHT_TO_LEFT" prefHeight="394.0" prefWidth="213.0" spacing="13.0">
+         <children>
+            <JFXButton fx:id="b2" buttonType="RAISED" contentDisplay="CENTER" layoutX="10.0" layoutY="123.0" onAction="#makePromo" prefHeight="56.0" prefWidth="148.0" ripplerFill="WHITE" style="-fx-background-color: #4099ff;" text="Bons plans" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="b111" buttonType="RAISED" contentDisplay="CENTER" onAction="#makeQuizz" prefHeight="54.0" prefWidth="148.0" ripplerFill="#ffffff00" style="-fx-background-color: #4099ff;" text="Quizz" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="famille" buttonType="RAISED" contentDisplay="CENTER" layoutX="10.0" layoutY="284.0" onAction="#familles" prefHeight="54.0" prefWidth="149.0" ripplerFill="#fc0000" style="-fx-background-color: #4099ff;" text="Nos Familles" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></JFXButton>
+            <MenuButton fx:id="b1" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="149.0" style="-fx-background-color: #4099ff;" text="sortir en famille" textFill="WHITE">
+              <items>
+                <MenuItem fx:id="parc" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-size: 20;" text="parc" />
+                <MenuItem fx:id="restaurant" mnemonicParsing="false" onAction="#handle1ButtonAction" text="restaurant" />
+                  <MenuItem fx:id="cinema" mnemonicParsing="false" onAction="#handle2ButtonAction" text="cinema" />
+                  <MenuItem fx:id="cirque" mnemonicParsing="false" onAction="#handle3ButtonAction" text="cirque" />
+              </items>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </MenuButton>
+            <MenuButton fx:id="b11" contentDisplay="CENTER" layoutX="34.0" layoutY="230.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="152.0" style="-fx-background-color: #4099ff;" text="Nos Evenements" textFill="WHITE">
+               <items>
+                  <MenuItem fx:id="ajoutEvenement" mnemonicParsing="false" onAction="#ajoutEvenementAction" style="-fx-background-size: 20;" text="Créer des évenements" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem fx:id="GererEvenement" mnemonicParsing="false" onAction="#GererEvenementAction" text="Gérer les évenements" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem fx:id="VoirInvt" mnemonicParsing="false" onAction="#VoirInvtAction" text="Mes invitations" />
+               </items>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </MenuButton>
+      
+         </children>
+         <padding>
+            <Insets bottom="17.0" left="24.0" right="37.0" top="17.0" />
+         </padding>
+      </VBox>
+      <ImageView fitHeight="74.0" fitWidth="48.0" layoutX="81.0" layoutY="14.0" onMouseClicked="#RedirigerVersHome" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/maison-icone-large.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

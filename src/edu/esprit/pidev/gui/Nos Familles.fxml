@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="484.0" prefWidth="633.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.pidev.controllers.NosFamillesController">
+   <children>
+      <BorderPane layoutX="23.0" layoutY="23.0" prefHeight="339.0" prefWidth="555.0">
+         <center>
+            <TableView fx:id="Familles" prefHeight="306.0" prefWidth="495.0" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn fx:id="id" prefWidth="81.0" text="id" />
+                <TableColumn fx:id="NomdeFamilleid" prefWidth="195.0" text="    Nom de Famille" />
+                  <TableColumn fx:id="membres" prefWidth="153.0" text="membres" />
+                  <TableColumn fx:id="image" prefWidth="123.0" text="image" />
+              </columns>
+            </TableView>
+         </center>
+      </BorderPane>
+      <JFXButton fx:id="rejoindre" buttonType="RAISED" layoutX="267.0" layoutY="369.0" onAction="#Rejoindre" ripplerFill="WHITE" style="-fx-background-color: #2196F3;" text="Rejoindre" />
+      <JFXButton fx:id="creer" buttonType="RAISED" layoutX="224.0" layoutY="421.0" onAction="#redirectionCréer" ripplerFill="WHITE" style="-fx-background-color: #2196F3;" text="Créer une nouvelle famille" />
+   </children>
+</AnchorPane>

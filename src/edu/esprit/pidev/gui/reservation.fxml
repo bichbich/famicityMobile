@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.pidev.controllers.ReservationController">
+   <children>
+      <JFXHamburger fx:id="hamburger" layoutX="8.0" layoutY="4.0" />
+      <JFXDrawer fx:id="drawer" layoutX="67.0" layoutY="24.0" prefHeight="373.0" prefWidth="75.0" />
+   
+   <Label alignment="CENTER" layoutX="328.0" layoutY="27.0" prefHeight="37.0" prefWidth="167.0" text="voulez-vous Reserver">
+         <font>
+            <Font name="Roboto Bold" size="14.0" />
+         </font></Label>
+      <JFXButton fx:id="btnDemande" buttonType="RAISED" layoutX="498.0" layoutY="240.0" mnemonicParsing="false" onAction="#ActionAjout" prefHeight="29.0" prefWidth="273.0" style="-fx-background-color: #2196f3;" text="envoyer demande pour avoir votre coupon">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="12.1" radius="7.032500000000001" width="18.03" />
+         </effect>
+         <font>
+            <Font name="Roboto" size="13.0" />
+         </font></JFXButton>
+      <JFXDatePicker fx:id="datep" layoutX="349.0" layoutY="172.0" onAction="#Date2" />
+      <JFXTextArea fx:id="nbplaces" layoutX="349.0" layoutY="91.0" prefHeight="58.0" prefWidth="149.0" promptText="nombre de places " />
+      <JFXButton fx:id="btnconversion" buttonType="RAISED" layoutX="321.0" layoutY="240.0" mnemonicParsing="false" onAction="#covertPoint" prefHeight="29.0" prefWidth="142.0" style="-fx-background-color: #2196f3;" text="convertir vos points" visible="false">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="12.1" radius="7.032500000000001" width="18.03" />
+         </effect>
+         <font>
+            <Font name="Roboto" size="13.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

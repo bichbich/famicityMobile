@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.pidev.controllers.PromoListFrontController">
+   <children>
+      <JFXHamburger fx:id="hamberger" layoutX="17.0" layoutY="16.0" />
+      <JFXDrawer fx:id="drawer" layoutX="3.0" layoutY="68.0" prefHeight="532.0" prefWidth="170.0" />
+      <Button fx:id="MoreDetails" layoutX="174.0" layoutY="568.0" mnemonicParsing="false" onAction="#makeMoreDetails" prefHeight="26.0" prefWidth="845.0" text="Plus de detail" />
+      <JFXListView fx:id="listview" layoutX="171.0" layoutY="53.0" prefHeight="509.0" prefWidth="853.0" />
+   </children>
+</AnchorPane>

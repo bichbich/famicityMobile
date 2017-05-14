@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.pidev.controllers.DetailController">
+   <children>
+      <JFXDrawer fx:id="drawer" layoutY="67.0" prefHeight="532.0" prefWidth="170.0" />
+      <JFXHamburger fx:id="hamberger" layoutX="14.0" layoutY="13.0" />
+      <Label fx:id="coin" layoutX="972.0" layoutY="14.0" prefHeight="36.0" prefWidth="38.0" text="Label" />
+      <ImageView fitHeight="36.0" fitWidth="42.0" layoutX="933.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/imageService/coin.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="nom" layoutX="774.0" layoutY="14.0" prefHeight="36.0" prefWidth="89.0" text="Label" />
+      <Pane layoutX="170.0" layoutY="68.0" prefHeight="532.0" prefWidth="854.0" style="-fx-background-color: #4099FF;">
+         <children>
+            <ImageView fitHeight="573.0" fitWidth="888.0" layoutX="-3.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/imageService/slide04.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="idSer1" layoutX="332.0" layoutY="181.0" prefHeight="42.0" prefWidth="136.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="idSer2" layoutX="335.0" layoutY="264.0" prefHeight="42.0" prefWidth="136.0" textFill="#d73333">
+               <font>
+                  <Font name="System Bold Italic" size="48.0" />
+               </font>
+            </Label>
+            <Text fill="WHITE" layoutX="33.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prix :" wrappingWidth="136.0">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="37.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prix promo :" wrappingWidth="286.0">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="imagePromo" fitHeight="318.0" fitWidth="349.0" layoutX="515.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+      <JFXButton fx:id="Partager" layoutX="908.0" layoutY="490.0" onAction="#makePartager" text="Partager" />
+      <Label fx:id="idSer" layoutX="202.0" layoutY="148.0" prefHeight="53.0" prefWidth="432.0" text="Label" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

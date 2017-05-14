@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.pidev.controllers.AddQuizzController">
+   <children>
+      <Pane layoutX="15.0" layoutY="14.0" prefHeight="372.0" prefWidth="570.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <JFXTextField fx:id="ques" focusColor="#4099ff" layoutX="154.0" layoutY="66.0" prefHeight="25.0" prefWidth="263.0" promptText="Question" unFocusColor="BLACK" />
+            <JFXTextField fx:id="numquizz" focusColor="#4099ff" layoutX="154.0" layoutY="94.0" prefHeight="25.0" prefWidth="263.0" promptText="N° Quizz" unFocusColor="BLACK" />
+            <JFXTextField fx:id="rep1" focusColor="#4099ff" layoutX="154.0" layoutY="122.0" prefHeight="25.0" prefWidth="263.0" promptText="1ère reponse" unFocusColor="BLACK" />
+            <JFXTextField fx:id="rep2" focusColor="#4099ff" layoutX="154.0" layoutY="150.0" prefHeight="25.0" prefWidth="263.0" promptText="2ème reponse" unFocusColor="BLACK" />
+            <JFXTextField fx:id="rep3" focusColor="#4099ff" layoutX="154.0" layoutY="178.0" prefHeight="25.0" prefWidth="263.0" promptText="3ème reponse" unFocusColor="BLACK" />
+            <JFXTextField fx:id="rep" focusColor="#4099ff" layoutX="154.0" layoutY="206.0" prefHeight="25.0" prefWidth="263.0" promptText="N° reponse correcte" unFocusColor="BLACK" />
+            <JFXButton fx:id="add" buttonType="RAISED" layoutX="259.0" layoutY="263.0" onAction="#makeadd" ripplerFill="WHITE" style="-fx-background-color: #4099ff;" text="Ajouter" textFill="WHITE" />
+            <Label layoutX="258.0" layoutY="35.0" text="Add Quizz" textAlignment="CENTER" textFill="#3d3ae4" />
+         </children>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" />
+         </effect>
+      </Pane>
+      <JFXButton layoutX="486.0" layoutY="346.0" onAction="#makeHome" text="Home" />
+   </children>
+   <stylesheets>
+      <URL value="@addquizz.css" />
+   </stylesheets>
+</AnchorPane>

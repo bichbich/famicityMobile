@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1024.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.pidev.controllers.MenuADMINController">
+   <children>
+      <JFXHamburger fx:id="hamburger" layoutX="8.0" layoutY="4.0" />
+      <JFXDrawer fx:id="drawer" layoutY="27.0" prefHeight="373.0" prefWidth="75.0" />
+      <ImageView fitHeight="600.0" fitWidth="996.0" layoutX="265.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/17495411_1374667325954895_523311120_n_1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="908.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/administrative-tools.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="82.0" fitWidth="75.0" layoutX="960.0" layoutY="498.0" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/depositphotos_23627955-stock-photo-exit-black-and-blue-square.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

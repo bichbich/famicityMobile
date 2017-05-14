@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1024.0" style="-fx-background-color: c;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.pidev.controllers.CirqueController">
+   <children>
+      <JFXHamburger layoutX="49.0" layoutY="50.0" />
+      <JFXButton fx:id="b1" buttonType="RAISED" layoutX="34.0" layoutY="113.0" onAction="#retourner" prefHeight="54.0" prefWidth="133.0" style="-fx-background-color: #2196F3;" text="Sortir en Famille" />
+      <JFXButton fx:id="b2" buttonType="RAISED" layoutX="34.0" layoutY="187.0" prefHeight="56.0" prefWidth="133.0" ripplerFill="#ff0202" style="-fx-background-color: #2196F3;" text="Bons plans" />
+      <JFXButton fx:id="famille" buttonType="RAISED" layoutX="34.0" layoutY="265.0" prefHeight="54.0" prefWidth="133.0" ripplerFill="#fc0000" style="-fx-background-color: #2196F3;" text="Nos Familles" />
+      <JFXButton fx:id="b11" buttonType="RAISED" layoutX="34.0" layoutY="340.0" prefHeight="54.0" prefWidth="133.0" style="-fx-background-color: #2196F3;" text="Nos évènements" />
+      <Label layoutX="436.0" layoutY="28.0" text="Cirque" textFill="#da1212">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TextArea layoutX="247.0" layoutY="109.0" prefHeight="156.0" prefWidth="237.0" text="Un nouveau cirque internationnal s'est &#10;installé à Tunis, le circo Martini, un cirque&#10;italien de renommée qui a érigé son&#10;chapiteau au berge du Lac à partir du 18&#10;novembre 2016. Parmi les numéros qui &#10;seront présentés au cirque Martini en&#10;Tunisie, laser man, chevaux et animaux&#10;ainsi que numeros traditionnels.&#10;" />
+      <ImageView fitHeight="182.0" fitWidth="237.0" layoutX="589.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/cirque.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="255.0" layoutY="319.0" text="Laissez un commentaire">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtTitre" layoutX="310.0" layoutY="353.0" maxWidth="174.0" minWidth="174.0" prefHeight="31.0" prefWidth="174.0" />
+      <Label layoutX="253.0" layoutY="359.0" text="Titre">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="txtContenu" layoutX="322.0" layoutY="417.0" maxWidth="352.0" minWidth="292.0" prefHeight="109.0" prefWidth="292.0" />
+      <Label layoutX="255.0" layoutY="407.0" text="Contenu">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="send" layoutX="679.0" layoutY="526.0" onAction="#envoyer" style="-fx-background-color: #2196F3;" text="Envoyer" />
+   </children>
+</AnchorPane>

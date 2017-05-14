@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="reclamation" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1024.0" style="-fx-background-color: c;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.pidev.controllers.AfficherReclamationController">
+   <children>
+      <JFXButton fx:id="consulter" layoutX="184.0" layoutY="517.0" onAction="#voir" style="-fx-background-color: #2196F3;" text="Consulter" />
+      <JFXButton fx:id="delete" layoutX="330.0" layoutY="517.0" onAction="#supprimer" style="-fx-background-color: #2196F3;" text="Supprimer" />
+      <TableView fx:id="tableV" layoutX="148.0" layoutY="90.0" prefHeight="403.0" prefWidth="619.0">
+         <columns>
+            <TableColumn fx:id="tabNom" prefWidth="75.0" text="Nom" />
+            <TableColumn fx:id="tabSujet" prefWidth="75.0" text="Sujet" />
+            <TableColumn fx:id="tabEtat" prefWidth="75.0" text="Etat" />
+            <TableColumn fx:id="tabNature" prefWidth="75.0" text="Nature" />
+            <TableColumn fx:id="tabLevel" prefWidth="75.0" text="Level" />
+            <TableColumn fx:id="tabEmail" prefWidth="75.0" text="Email" />
+            <TableColumn fx:id="tabDate" prefWidth="75.0" text="Date" />
+            <TableColumn fx:id="tabDescription" prefWidth="75.0" text="Description" />
+         </columns>
+      </TableView>
+      <JFXButton fx:id="stat" layoutX="512.0" layoutY="517.0" onAction="#afficherStatistique" style="-fx-background-color: #2196F3;" text="Statistique" />
+      <JFXHamburger fx:id="menuADmin" layoutX="24.0" layoutY="24.0" />
+      <JFXButton fx:id="envoyer" layoutX="655.0" layoutY="516.0" onAction="#send" style="-fx-background-color: #2196F3;" text="Envoyer Mail" />
+      <ImageView fitHeight="74.0" fitWidth="101.0" layoutX="118.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/17495411_1374667325954895_523311120_n.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="63.0" fitWidth="72.0" layoutX="924.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/depositphotos_23627955-stock-photo-exit-black-and-blue-square.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="deconnecter" layoutX="802.0" layoutY="31.0" onAction="#logOut" style="-fx-background-color: #2196F3;" text="Deconnexion" />
+   </children>
+</AnchorPane>

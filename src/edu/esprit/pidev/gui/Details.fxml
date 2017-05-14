@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.pidev.controllers.DetailsController">
+   <children>
+      <Label fx:id="membreid" layoutX="270.0" layoutY="103.0" prefHeight="54.0" prefWidth="298.0" text="Label" />
+      <Label fx:id="membreposition" layoutX="270.0" layoutY="165.0" text="Label" />
+      <JFXHamburger fx:id="humberger" layoutX="14.0" layoutY="14.0" />
+      <JFXDrawer fx:id="drawer" layoutX="14.0" layoutY="49.0" prefHeight="327.0" prefWidth="49.0" />
+      <Text fill="#1e1eb2" fontSmoothingType="LCD" layoutX="209.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="les membres de famille">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
